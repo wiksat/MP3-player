@@ -1,0 +1,157 @@
+#box{
+    width: 80%;
+    height: 86vh;
+    background-color: rgb(81, 84, 114);
+    float: left;
+    text-align: center;
+    color: white;
+    font-size: xx-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow: auto;
+}
+#albumy{
+    width: 20%;
+    height: 86vh;
+    background-color: rgb(86, 84, 112);
+    float: left;
+    overflow: auto;
+}
+#player{
+    clear: both;
+    height: 14vh;
+    width: 100%;
+    background-color: rgb(5, 5, 70);
+}
+*{
+    margin:0 auto;
+}
+#albumy>img{
+    width: 100%;
+}
+.pl>img{
+    height: 10vh;
+}
+
+.dir, .file, .size, .play{
+    display: inline-block;
+    margin-right: 1vw;
+    color:white;
+    margin-top: 1vh;
+    font-size: large;
+}
+
+.file{
+    /* width:400px; */
+    width: 40vw;
+}
+.dir{
+    /* width:200px; */
+    width: 10vw;
+}
+.size{
+    /* width:200px; */
+    width: 10vw;
+}
+#player{
+    text-align: center;
+    color: white;
+}
+.sound{
+    position: relative;
+}
+.sound:hover{
+    background-color: thistle;
+}
+.soundp{
+    background-color: thistle;
+    transition: 0.2s;
+    
+}
+.play{
+    /* background-image: url("img/play.png"); */
+    width: 2.3vw;
+    /* height: 2.5vw; */
+    /* margin-top: 1vw; */
+    font-size: small;
+    display: none;
+    right: 6vw;
+    position: absolute;
+}
+.play>img{
+    /* height: 3vw; */
+    width: 100%;
+}
+.add{
+    width: 5vw;
+    margin-top: 1vw;
+    font-size: small;
+    background-color: red;
+    display: none;
+    right: 0;
+    position: absolute;
+}
+ img:hover,#playlist:hover,.add:hover, .play:hover, #border_progress:hover,.file:hover{
+    cursor: pointer;
+}
+
+audio{
+    display: none;
+}
+.pl{
+    display: inline-block;
+}
+#current{
+    padding-top:10px ;
+   color: white;
+   /* line-height: 200%; */
+    /* background-color: aliceblue; */
+    width:30%;
+    height: 6vh;
+    position: absolute;
+    float: left;
+   /* margin: 10px; */
+}
+#pause{
+    display: none;
+}
+#time{
+    display: inline-block;
+    padding-top:10px ;
+   color: white;
+   line-height: 200%;
+    /* background-color: aliceblue; */
+    width:30%;
+    height: 6vh;
+    position: absolute;
+   /* margin: 10px; */
+}
+#progress{
+    width: 0;
+    height: 2vh;
+    background-color: chartreuse;
+    float: left;
+
+}
+#border_progress{
+    background-color: blueviolet;
+    width: 20vw;
+    height: 2vh;
+}
+#playlist{
+    position: absolute;
+    width: 6vw;
+    height: 6vh;
+    background-color: red;
+    color: white;
+    right: 0;
+    bottom: 14vh;
+}
+#drop{
+    background-color: blue;
+    color: white;
+    text-align: center;
+    height: 100px;
+}
+#drop>h1{
+    pointer-events: none;
+}
